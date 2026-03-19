@@ -4,7 +4,7 @@ from personal import views
 # from users import views as user_views
 
 urlpatterns = [
-    path('index/', views.index, name='index'),
+    path('', views.index, name='index'),
     path('about/', views.about, name= 'about'),
     path('resume/', views.resume, name='resume'),
     path('portfolio/', views.portfolio, name='portfolio'),

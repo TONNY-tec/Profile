@@ -1271,3 +1271,122 @@
   # Starter Section Section
   --------------------------------------------------------------*/
   
+
+  /* started my css styles */
+  /* Custom Variables */
+:root {
+    --primary-color: #007bff; /* Sleek Blue */
+    --accent-color: #00d4ff;  /* Cyan for AI feel */
+    --bg-dark: #040b14;
+    --text-light: #f8f9fa;
+    --sidebar-width: 300px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+}
+
+/* Sidebar Styling */
+#header {
+    width: var(--sidebar-width);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #040b14;
+    padding: 30px 15px;
+    border-right: 1px solid rgba(255,255,255,0.1);
+    z-index: 1000;
+}
+
+.profile-img img {
+    margin: 0 auto;
+    display: block;
+    width: 120px;
+    border: 5px solid #2c2f3f;
+}
+
+.sitename {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-top: 15px;
+}
+
+/* Hero Section Enhancement */
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding-left: var(--sidebar-width);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(4, 11, 20, 0.7); /* Darker overlay for text legibility */
+    z-index: -1;
+}
+
+.accent-text {
+    color: var(--accent-color);
+    font-weight: 600;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.btn-get-started {
+    background: transparent;
+    border: 2px solid var(--accent-color);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.3s;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-get-started:hover {
+    background: var(--accent-color);
+    color: #000;
+}
+
+/* Social Links */
+.social-links a {
+    font-size: 18px;
+    color: rgba(255,255,255,0.7);
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Nav Menu */
+.navmenu ul { list-style: none; padding: 0; }
+.navmenu li { padding: 10px 0; }
+.navmenu a {
+    color: #a8a9b4;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navmenu a:hover, .navmenu a.active {
+    color: white;
+}
+
+.navmenu a i { font-size: 20px; padding-right: 10px; }
